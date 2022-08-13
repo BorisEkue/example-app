@@ -31,6 +31,17 @@ Route::middleware(['cors'])->group(function () {
 
         return $data;
     });
+
+    Route::post('/', function () {
+
+        $data = [
+            "_id" => "1",
+            "company" => "Hotshi",
+            "Product" => "Social network"
+        ];
+
+        return $data;
+    });
 });
 
 
